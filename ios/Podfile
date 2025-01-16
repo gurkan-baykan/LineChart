@@ -18,7 +18,7 @@ target 'LineChart' do
   config = use_native_modules!
   
   pod 'DeviceKit', '~> 5.5'
-  pod 'DGCharts', '~> 5.0'
+
 
   use_react_native!(
     :path => config[:reactNativePath],
