@@ -15,6 +15,9 @@
 		327633203B97A2502CB98F69 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */; };
 		7699B88040F8A987B510C191 /* libPods-LineChart-LineChartTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-LineChart-LineChartTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		DF61CC5F2D38533D001C2DE8 /* RTNCenteredText.mm in Sources */ = {isa = PBXBuildFile; fileRef = DF61CC5E2D38533D001C2DE8 /* RTNCenteredText.mm */; };
+		DF61CC622D385354001C2DE8 /* RTNCenteredTextManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = DF61CC612D385354001C2DE8 /* RTNCenteredTextManager.mm */; };
+		DF92F26C2D36F85000D4FB47 /* libReact-Core.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DF92F26B2D36F85000D4FB47 /* libReact-Core.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +48,10 @@
 		5DCACB8F33CDC322A6C60F78 /* libPods-LineChart.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LineChart.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = LineChart/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-LineChart-LineChartTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LineChart-LineChartTests.release.xcconfig"; path = "Target Support Files/Pods-LineChart-LineChartTests/Pods-LineChart-LineChartTests.release.xcconfig"; sourceTree = "<group>"; };
+		DF61CC5D2D38533D001C2DE8 /* RTNCenteredText.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RTNCenteredText.h; sourceTree = "<group>"; };
+		DF61CC5E2D38533D001C2DE8 /* RTNCenteredText.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = RTNCenteredText.mm; sourceTree = "<group>"; };
+		DF61CC612D385354001C2DE8 /* RTNCenteredTextManager.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = RTNCenteredTextManager.mm; sourceTree = "<group>"; };
+		DF92F26B2D36F85000D4FB47 /* libReact-Core.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libReact-Core.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -61,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF92F26C2D36F85000D4FB47 /* libReact-Core.a in Frameworks */,
 				0C80B921A6F3F58F76C31292 /* libPods-LineChart.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -102,6 +110,7 @@
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DF92F26B2D36F85000D4FB47 /* libReact-Core.a */,
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				5DCACB8F33CDC322A6C60F78 /* libPods-LineChart.a */,
 				19F6CBCC0A4E27FBF8BF4A61 /* libPods-LineChart-LineChartTests.a */,
@@ -119,6 +128,7 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				DF61CC582D385298001C2DE8 /* RTNCenteredText */,
 				13B07FAE1A68108700A75B9A /* LineChart */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* LineChartTests */,
@@ -149,6 +159,16 @@
 				89C6BE57DB24E9ADA2F236DE /* Pods-LineChart-LineChartTests.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		DF61CC582D385298001C2DE8 /* RTNCenteredText */ = {
+			isa = PBXGroup;
+			children = (
+				DF61CC5D2D38533D001C2DE8 /* RTNCenteredText.h */,
+				DF61CC5E2D38533D001C2DE8 /* RTNCenteredText.mm */,
+				DF61CC612D385354001C2DE8 /* RTNCenteredTextManager.mm */,
+			);
+			path = RTNCenteredText;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -209,7 +229,7 @@
 						TestTargetID = 13B07F861A680F5B00A75B9A;
 					};
 					13B07F861A680F5B00A75B9A = {
-						LastSwiftMigration = 1120;
+						LastSwiftMigration = 1530;
 					};
 				};
 			};
@@ -397,7 +417,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */,
+				DF61CC622D385354001C2DE8 /* RTNCenteredTextManager.mm in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
+				DF61CC5F2D38533D001C2DE8 /* RTNCenteredText.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -485,6 +507,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = LineChart;
+				SWIFT_OBJC_BRIDGING_HEADER = "NativeDeviceInformation/LineChart-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -512,6 +535,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = LineChart;
+				SWIFT_OBJC_BRIDGING_HEADER = "NativeDeviceInformation/LineChart-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -566,6 +590,13 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/node_modules/react-native/React/**",
+					"$(SRCROOT)/node_modules/react-native/React/Base/**",
+					"$(SRCROOT)/node_modules/react-native/React/Renderer/**",
+					"$(SRCROOT)/node_modules/react-native/ReactCommon/**",
+					"$(SRCROOT)/node_modules/react-native/React/Fabric/**",
+				);
 				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					/usr/lib/swift,
@@ -639,6 +670,13 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/node_modules/react-native/React/**",
+					"$(SRCROOT)/node_modules/react-native/React/Base/**",
+					"$(SRCROOT)/node_modules/react-native/React/Renderer/**",
+					"$(SRCROOT)/node_modules/react-native/ReactCommon/**",
+					"$(SRCROOT)/node_modules/react-native/React/Fabric/**",
+				);
 				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					/usr/lib/swift,
