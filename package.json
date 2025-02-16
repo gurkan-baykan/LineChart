@@ -9,10 +9,18 @@
     "start": "react-native start",
     "test": "jest"
   },
+  "files": [
+    "android",
+    "ios",
+    "dist",
+    "LineChart.podspec",
+    "src",
+    "jestSetup.js"
+  ],
   "codegenConfig": {
-    "name": "RTNCenteredTextSpecs",
+    "name": "centeredTextSpec",
     "type": "components",
-    "jsSrcsDir": "specs",
+    "jsSrcsDir": "./src/specs",
     "android": {
       "javaPackageName": "com.linechart"
     }

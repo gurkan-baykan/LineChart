@@ -1,8 +1,13 @@
 import React, {useEffect, useState} from 'react';
 import {SafeAreaView, ScrollView, Text, StyleSheet, View} from 'react-native';
 
-import NativeDeviceInformation from './specs/NativeDeviceInformation';
-import RTNCenteredText from './specs/RTNCenteredText';
+//import NativeDeviceInformation from './specs/NativeDeviceInformation';
+import RTNCenteredText from './src/specs/CenteredTextNativeComponent';
+import LineChartSpecView, {
+  LabelPosition,
+  LineData,
+} from './src/specs/LineChartNativeComponent';
+import PropTypes from 'prop-types';
 
 type TDeviceInfo = {
   isBatteryCharging: boolean;
@@ -26,163 +31,95 @@ type TDeviceInfo = {
 function App(): JSX.Element {
   const [deviceInfo, setDeviceInfo] = useState<TDeviceInfo | null>(null);
 
-  useEffect(() => {
-    if (NativeDeviceInformation) {
-      setDeviceInfo({
-        isBatteryCharging:
-          NativeDeviceInformation?.getIsBatteryCharging() as boolean,
-        isACBatteryCharge:
-          NativeDeviceInformation?.getIsACBatteryCharge() as boolean,
-        isUSBBatteryCharge:
-          NativeDeviceInformation?.getIsUSBBatteryCharge() as boolean,
-        batteryPercentage:
-          NativeDeviceInformation?.getBatteryPercentage() as number,
-        isLowMemory: NativeDeviceInformation?.getIsLowMemory() as boolean,
-        availableMemory:
-          NativeDeviceInformation?.getAvailableMemory() as string,
-        totalMemory: NativeDeviceInformation?.getTotalMemory() as string,
-        appVersion: NativeDeviceInformation?.getReadableVersion() as string,
-        deviceBrand: NativeDeviceInformation?.getDeviceBrand() as string,
-        device: NativeDeviceInformation?.getDevice() as string,
-        deviceModel: NativeDeviceInformation?.getDeviceModel() as string,
-        deviceManufacturer:
-          NativeDeviceInformation?.getDeviceManufacturer() as string,
-        product: NativeDeviceInformation?.getProduct() as string,
-        osName: NativeDeviceInformation?.getOsName() as string,
-        osVersion: NativeDeviceInformation?.getOsVersion() as string,
-        hardware: NativeDeviceInformation?.getHardware() as string,
-      });
-    }
-  }, []);
+  // useEffect(() => {
+  //   if (NativeDeviceInformation) {
+  //     setDeviceInfo({
+  //       isBatteryCharging:
+  //         NativeDeviceInformation?.getIsBatteryCharging() as boolean,
+  //       isACBatteryCharge:
+  //         NativeDeviceInformation?.getIsACBatteryCharge() as boolean,
+  //       isUSBBatteryCharge:
+  //         NativeDeviceInformation?.getIsUSBBatteryCharge() as boolean,
+  //       batteryPercentage:
+  //         NativeDeviceInformation?.getBatteryPercentage() as number,
+  //       isLowMemory: NativeDeviceInformation?.getIsLowMemory() as boolean,
+  //       availableMemory:
+  //         NativeDeviceInformation?.getAvailableMemory() as string,
+  //       totalMemory: NativeDeviceInformation?.getTotalMemory() as string,
+  //       appVersion: NativeDeviceInformation?.getReadableVersion() as string,
+  //       deviceBrand: NativeDeviceInformation?.getDeviceBrand() as string,
+  //       device: NativeDeviceInformation?.getDevice() as string,
+  //       deviceModel: NativeDeviceInformation?.getDeviceModel() as string,
+  //       deviceManufacturer:
+  //         NativeDeviceInformation?.getDeviceManufacturer() as string,
+  //       product: NativeDeviceInformation?.getProduct() as string,
+  //       osName: NativeDeviceInformation?.getOsName() as string,
+  //       osVersion: NativeDeviceInformation?.getOsVersion() as string,
+  //       hardware: NativeDeviceInformation?.getHardware() as string,
+  //     });
+  //   }
+  // }, []);
 
-  // Helper function to render info rows with gradient effect
-  const renderInfoRow = (label: string, value: string | number | undefined) => (
-    <View style={styles.infoRowContainer}>
-      <View style={styles.infoRowGradient}>
-        <Text style={styles.infoLabel}>{label}</Text>
-        <Text style={styles.infoValue}>{value}</Text>
-      </View>
-    </View>
-  );
+  const count = 15; // Kaç veri noktası oluşturulacağını belirler
+  const range = 100; // Rastgele sayının üst sınırı (0 ile range arasında)
 
-  // Render a section with a custom title
-  const renderSection = (title: string, children: React.ReactNode) => (
-    <View style={styles.sectionContainer}>
-      <View style={styles.sectionTitleContainer}>
-        <Text style={styles.sectionTitle}>{title}</Text>
-        <View style={styles.sectionTitleUnderline} />
-      </View>
-      {children}
-    </View>
-  );
+  const values = Array.from({length: count}, (_, i) => {
+    const val = Math.floor(Math.random() * range) + 3; // 0 ile range arasında bir sayı üret ve 3 ekle
+    return {x: i, y: val}; // Veriyi obje olarak oluştur
+  });
+
+  const lineData = {
+    dataSets: [
+      {
+        values: values,
+        label: 'Dilek native linecharti',
+      },
+    ],
+    drawVerticalHighlightIndicatorEnabled: true,
+    drawValuesEnabled: true,
+    mode: 'lienar',
+    drawHorizontalHighlightIndicatorEnabled: true,
+    gradientColorsData: {from: '#f5f0f0', to: '#d6371e'},
+  };
 
   return (
     <SafeAreaView style={styles.container}>
-      <ScrollView
-        contentContainerStyle={styles.scrollContent}
-        showsVerticalScrollIndicator={false}>
-        {/* Header with Gradient */}
-
-        <View style={{flex: 1}}></View>
-
-        <View style={styles.contentContainer}>
-          <RTNCenteredText
-            text="Hello World!"
-            style={{width: '100%', height: 30}}
-          />
-          {renderSection(
-            'Device Information',
-            <>
-              {renderInfoRow('Brand', deviceInfo?.deviceBrand)}
-              {renderInfoRow('Device', deviceInfo?.device)}
-              {renderInfoRow('Model', deviceInfo?.deviceModel)}
-              {renderInfoRow('Manufacturer', deviceInfo?.deviceManufacturer)}
-              {renderInfoRow('Product', deviceInfo?.product)}
-            </>,
-          )}
-          {/**
-   * 
-   * <LineChart
-            style={styles.chart}
-            data={{
-              label: 'Sample Line Chart',
-              entries: [
-                {x: 1, y: 2},
-                {x: 2, y: 3},
-                {x: 3, y: 5},
-                {x: 4, y: 7},
-              ],
-            }}
-          />
-   * 
-   */}
-
-          {/* {renderSection(
-            'System Details',
-            <>
-              {renderInfoRow('OS Name', deviceInfo?.osName)}
-              {renderInfoRow('OS Version', deviceInfo?.osVersion)}
-              {renderInfoRow('Hardware', deviceInfo?.hardware)}
-            </>,
-          )}
-
-          {renderSection(
-            'Battery Status',
-            <>
-              {renderInfoRow('Percentage', `${deviceInfo?.batteryPercentage}%`)}
-              {renderInfoRow(
-                'Charging',
-                deviceInfo?.isBatteryCharging ? 'Active' : 'Inactive',
-              )}
-              {isAndroid
-                ? renderInfoRow(
-                    'AC Charge',
-                    deviceInfo?.isACBatteryCharge
-                      ? 'Connected'
-                      : 'Disconnected',
-                  )
-                : null}
-              {isAndroid
-                ? renderInfoRow(
-                    'USB Charge',
-                    deviceInfo?.isUSBBatteryCharge
-                      ? 'Connected'
-                      : 'Disconnected',
-                  )
-                : null}
-            </>,
-          )}
-
-          {isAndroid
-            ? renderSection(
-                'RAM Insights',
-                <>
-                  {renderInfoRow(
-                    'RAM Status',
-                    deviceInfo?.isLowMemory ? 'Low Memory' : 'Sufficient',
-                  )}
-                  {renderInfoRow('Available RAM', deviceInfo?.availableMemory)}
-                  {renderInfoRow('Total RAM', deviceInfo?.totalMemory)}
-                </>,
-              )
-            : renderSection(
-                'Storage Insights',
-                <>
-                  {renderInfoRow(
-                    'Storage Status',
-                    deviceInfo?.isLowMemory ? 'Low Storage' : 'Sufficient',
-                  )}
-                  {renderInfoRow('Available', deviceInfo?.availableMemory)}
-                  {renderInfoRow('Total', deviceInfo?.totalMemory)}
-                </>,
-              )}
-
-          {renderSection(
-            'Application',
-            <>{renderInfoRow('Version', deviceInfo?.appVersion)}</>,
-          )} */}
-        </View>
-      </ScrollView>
+      <View
+        style={{
+          flex: 1,
+          height: 300,
+          justifyContent: 'center',
+          alignItems: 'center',
+        }}>
+        <LineChartSpecView
+          data={lineData}
+          markerEntity={{
+            bgColor: '#d6371e',
+            color: 'white',
+            fontSize: 14,
+            circleEntity: {size: 18, color: '#1e498f'},
+            position: {left: 8, top: 8, bottom: 20, right: 8},
+          }}
+          xAxisEntity={{
+            drawLabelsEnabled: true,
+            labelPosition: 'bottom',
+            labelFont: {size: 12, weight: 'bold'},
+            labelTextColor: '#1e498f',
+            yOffset: 5,
+          }}
+          yAxisEntity={{
+            drawLabelsEnabled: true,
+            labelPosition: 'outside',
+            labelFont: {size: 10, weight: 'bold'},
+            labelTextColor: '#d6371e',
+            xOffset: 0,
+          }}
+          highlightPerTapEnabled={true}
+          highlightPerDragEnabled={true}
+          dragEnabled={true}
+          style={{width: '100%', height: '50%'}}
+        />
+      </View>
     </SafeAreaView>
   );
 }

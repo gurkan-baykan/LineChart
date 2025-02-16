@@ -6,5 +6,5 @@ export interface NativeProps extends ViewProps {
 }
 
 export default codegenNativeComponent<NativeProps>(
-  'RTNCenteredText',
+  'CenteredTextView',
 ) as HostComponent<NativeProps>;

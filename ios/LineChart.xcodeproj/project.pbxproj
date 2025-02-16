@@ -8,16 +8,31 @@
 
 /* Begin PBXBuildFile section */
 		00E356F31AD99517003FC87E /* LineChartTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* LineChartTests.m */; };
-		0C80B921A6F3F58F76C31292 /* libPods-LineChart.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DCACB8F33CDC322A6C60F78 /* libPods-LineChart.a */; };
-		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
+		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		327633203B97A2502CB98F69 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */; };
-		7699B88040F8A987B510C191 /* libPods-LineChart-LineChartTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-LineChart-LineChartTests.a */; };
+		593B0212701569CD75E33B78 /* libPods-LineChart-LineChartTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B13C230223C71D8EC049660A /* libPods-LineChart-LineChartTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
-		DF61CC5F2D38533D001C2DE8 /* RTNCenteredText.mm in Sources */ = {isa = PBXBuildFile; fileRef = DF61CC5E2D38533D001C2DE8 /* RTNCenteredText.mm */; };
-		DF61CC622D385354001C2DE8 /* RTNCenteredTextManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = DF61CC612D385354001C2DE8 /* RTNCenteredTextManager.mm */; };
+		C6DE8EB5AD2D345C26405673 /* libPods-LineChart.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C47F21EB7EA32FF108E44480 /* libPods-LineChart.a */; };
+		DF3FBDA82D4549D0001E5076 /* LineChartSpecViewManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = DF952F002D416F8600DE4E94 /* LineChartSpecViewManager.mm */; };
+		DF3FBDAB2D459155001E5076 /* DateValueFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3FBDAA2D459155001E5076 /* DateValueFormatter.swift */; };
+		DF3FBDAD2D459193001E5076 /* IntAxisValueFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3FBDAC2D459193001E5076 /* IntAxisValueFormatter.swift */; };
+		DF4FACA92D5161E6006F32BC /* IMarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF4FACA82D5161E6006F32BC /* IMarker.swift */; };
+		DF61CC5F2D38533D001C2DE8 /* CenteredTextViewComponentView.mm in Sources */ = {isa = PBXBuildFile; fileRef = DF61CC5E2D38533D001C2DE8 /* CenteredTextViewComponentView.mm */; };
+		DF61CC622D385354001C2DE8 /* CenteredTextViewManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = DF61CC612D385354001C2DE8 /* CenteredTextViewManager.mm */; };
+		DF86661A2D4D735000D5B6AA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF8666192D4D735000D5B6AA /* UIKit.framework */; };
+		DF86661C2D4D736900D5B6AA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF86661B2D4D736900D5B6AA /* Foundation.framework */; };
+		DF86661E2D4D737700D5B6AA /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF86661D2D4D737700D5B6AA /* QuartzCore.framework */; };
+		DF8666202D4D737F00D5B6AA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF86661F2D4D737F00D5B6AA /* CoreGraphics.framework */; };
 		DF92F26C2D36F85000D4FB47 /* libReact-Core.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DF92F26B2D36F85000D4FB47 /* libReact-Core.a */; };
+		DF952F022D416FB800DE4E94 /* LineChartSpecViewComponentView.mm in Sources */ = {isa = PBXBuildFile; fileRef = DF952F012D416FB800DE4E94 /* LineChartSpecViewComponentView.mm */; };
+		DF952F042D416FDB00DE4E94 /* LineChartSpecViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF952F032D416FDB00DE4E94 /* LineChartSpecViewManager.swift */; };
+		DF952F062D416FEE00DE4E94 /* LineChartSpecView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF952F052D416FEE00DE4E94 /* LineChartSpecView.swift */; };
+		DF9678272D50260A00B75978 /* BalloonMarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9678262D50260A00B75978 /* BalloonMarker.swift */; };
+		DFA59D7C2D58DD8900C2B71F /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFA59D7B2D58DD8900C2B71F /* UIColor+Hex.swift */; };
+		DFEF32F02D3AE76C00F9CA65 /* CenteredTextViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFEF32EF2D3AE76C00F9CA65 /* CenteredTextViewManager.swift */; };
+		DFEF32F22D3AE78E00F9CA65 /* CenteredTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFEF32F12D3AE78E00F9CA65 /* CenteredTextView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,29 +45,62 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		DFBFD2E22D497901005FBF4E /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		00E356EE1AD99517003FC87E /* LineChartTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LineChartTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* LineChartTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LineChartTests.m; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* LineChart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LineChart.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = LineChart/AppDelegate.h; sourceTree = "<group>"; };
-		13B07FB01A68108700A75B9A /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = LineChart/AppDelegate.mm; sourceTree = "<group>"; };
+		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = LineChart/AppDelegate.m; sourceTree = "<group>"; };
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = LineChart/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = LineChart/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = LineChart/main.m; sourceTree = "<group>"; };
 		13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = PrivacyInfo.xcprivacy; path = LineChart/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
-		19F6CBCC0A4E27FBF8BF4A61 /* libPods-LineChart-LineChartTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LineChart-LineChartTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3B4392A12AC88292D35C810B /* Pods-LineChart.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LineChart.debug.xcconfig"; path = "Target Support Files/Pods-LineChart/Pods-LineChart.debug.xcconfig"; sourceTree = "<group>"; };
-		5709B34CF0A7D63546082F79 /* Pods-LineChart.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LineChart.release.xcconfig"; path = "Target Support Files/Pods-LineChart/Pods-LineChart.release.xcconfig"; sourceTree = "<group>"; };
-		5B7EB9410499542E8C5724F5 /* Pods-LineChart-LineChartTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LineChart-LineChartTests.debug.xcconfig"; path = "Target Support Files/Pods-LineChart-LineChartTests/Pods-LineChart-LineChartTests.debug.xcconfig"; sourceTree = "<group>"; };
-		5DCACB8F33CDC322A6C60F78 /* libPods-LineChart.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LineChart.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2BE20259A62D3EFB9A2D5B90 /* Pods-LineChart-LineChartTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LineChart-LineChartTests.release.xcconfig"; path = "Target Support Files/Pods-LineChart-LineChartTests/Pods-LineChart-LineChartTests.release.xcconfig"; sourceTree = "<group>"; };
+		44C104957A2AF9A25384DB7A /* Pods-LineChart.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LineChart.release.xcconfig"; path = "Target Support Files/Pods-LineChart/Pods-LineChart.release.xcconfig"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = LineChart/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		89C6BE57DB24E9ADA2F236DE /* Pods-LineChart-LineChartTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LineChart-LineChartTests.release.xcconfig"; path = "Target Support Files/Pods-LineChart-LineChartTests/Pods-LineChart-LineChartTests.release.xcconfig"; sourceTree = "<group>"; };
-		DF61CC5D2D38533D001C2DE8 /* RTNCenteredText.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RTNCenteredText.h; sourceTree = "<group>"; };
-		DF61CC5E2D38533D001C2DE8 /* RTNCenteredText.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = RTNCenteredText.mm; sourceTree = "<group>"; };
-		DF61CC612D385354001C2DE8 /* RTNCenteredTextManager.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = RTNCenteredTextManager.mm; sourceTree = "<group>"; };
+		AC8D71672AE7227763D60B3B /* Pods-LineChart-LineChartTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LineChart-LineChartTests.debug.xcconfig"; path = "Target Support Files/Pods-LineChart-LineChartTests/Pods-LineChart-LineChartTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B13C230223C71D8EC049660A /* libPods-LineChart-LineChartTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LineChart-LineChartTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C47F21EB7EA32FF108E44480 /* libPods-LineChart.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LineChart.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF2822102D4649FF004BA75A /* libDGCharts.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libDGCharts.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF3FBDAA2D459155001E5076 /* DateValueFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateValueFormatter.swift; sourceTree = "<group>"; };
+		DF3FBDAC2D459193001E5076 /* IntAxisValueFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntAxisValueFormatter.swift; sourceTree = "<group>"; };
+		DF4FACA82D5161E6006F32BC /* IMarker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IMarker.swift; sourceTree = "<group>"; };
+		DF61CC5D2D38533D001C2DE8 /* CenteredTextViewComponentView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CenteredTextViewComponentView.h; sourceTree = "<group>"; };
+		DF61CC5E2D38533D001C2DE8 /* CenteredTextViewComponentView.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = CenteredTextViewComponentView.mm; sourceTree = "<group>"; };
+		DF61CC612D385354001C2DE8 /* CenteredTextViewManager.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = CenteredTextViewManager.mm; sourceTree = "<group>"; };
+		DF81B7842D42E9100081B578 /* LineChart-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LineChart-Bridging-Header.h"; sourceTree = "<group>"; };
+		DF8666192D4D735000D5B6AA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		DF86661B2D4D736900D5B6AA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		DF86661D2D4D737700D5B6AA /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		DF86661F2D4D737F00D5B6AA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		DF92F26B2D36F85000D4FB47 /* libReact-Core.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libReact-Core.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF952EFD2D416EE600DE4E94 /* LineChartSpecViewComponentView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LineChartSpecViewComponentView.h; sourceTree = "<group>"; };
+		DF952F002D416F8600DE4E94 /* LineChartSpecViewManager.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = LineChartSpecViewManager.mm; sourceTree = "<group>"; };
+		DF952F012D416FB800DE4E94 /* LineChartSpecViewComponentView.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = LineChartSpecViewComponentView.mm; sourceTree = "<group>"; };
+		DF952F032D416FDB00DE4E94 /* LineChartSpecViewManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineChartSpecViewManager.swift; sourceTree = "<group>"; };
+		DF952F052D416FEE00DE4E94 /* LineChartSpecView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineChartSpecView.swift; sourceTree = "<group>"; };
+		DF9678202D5018F800B75978 /* React.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = React.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF9678262D50260A00B75978 /* BalloonMarker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalloonMarker.swift; sourceTree = "<group>"; };
+		DFA59D7B2D58DD8900C2B71F /* UIColor+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Hex.swift"; sourceTree = "<group>"; };
+		DFEF32EF2D3AE76C00F9CA65 /* CenteredTextViewManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenteredTextViewManager.swift; sourceTree = "<group>"; };
+		DFEF32F12D3AE78E00F9CA65 /* CenteredTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenteredTextView.swift; sourceTree = "<group>"; };
+		DFEF32F32D3AEED000F9CA65 /* LineChart-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LineChart-Bridging-Header.h"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		FDF226E1D29478CDA53D4AE0 /* Pods-LineChart.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LineChart.debug.xcconfig"; path = "Target Support Files/Pods-LineChart/Pods-LineChart.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +108,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7699B88040F8A987B510C191 /* libPods-LineChart-LineChartTests.a in Frameworks */,
+				593B0212701569CD75E33B78 /* libPods-LineChart-LineChartTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,8 +116,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF8666202D4D737F00D5B6AA /* CoreGraphics.framework in Frameworks */,
+				DF86661E2D4D737700D5B6AA /* QuartzCore.framework in Frameworks */,
+				DF86661C2D4D736900D5B6AA /* Foundation.framework in Frameworks */,
+				DF86661A2D4D735000D5B6AA /* UIKit.framework in Frameworks */,
 				DF92F26C2D36F85000D4FB47 /* libReact-Core.a in Frameworks */,
-				0C80B921A6F3F58F76C31292 /* libPods-LineChart.a in Frameworks */,
+				C6DE8EB5AD2D345C26405673 /* libPods-LineChart.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,7 +149,7 @@
 			isa = PBXGroup;
 			children = (
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
-				13B07FB01A68108700A75B9A /* AppDelegate.mm */,
+				13B07FB01A68108700A75B9A /* AppDelegate.m */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
@@ -110,10 +162,16 @@
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DF9678202D5018F800B75978 /* React.framework */,
+				DF86661F2D4D737F00D5B6AA /* CoreGraphics.framework */,
+				DF86661D2D4D737700D5B6AA /* QuartzCore.framework */,
+				DF86661B2D4D736900D5B6AA /* Foundation.framework */,
+				DF8666192D4D735000D5B6AA /* UIKit.framework */,
+				DF2822102D4649FF004BA75A /* libDGCharts.a */,
 				DF92F26B2D36F85000D4FB47 /* libReact-Core.a */,
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
-				5DCACB8F33CDC322A6C60F78 /* libPods-LineChart.a */,
-				19F6CBCC0A4E27FBF8BF4A61 /* libPods-LineChart-LineChartTests.a */,
+				C47F21EB7EA32FF108E44480 /* libPods-LineChart.a */,
+				B13C230223C71D8EC049660A /* libPods-LineChart-LineChartTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -128,6 +186,7 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				DF952EFC2D416E7E00DE4E94 /* RTNLineChart */,
 				DF61CC582D385298001C2DE8 /* RTNCenteredText */,
 				13B07FAE1A68108700A75B9A /* LineChart */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
@@ -135,6 +194,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				BBD78D7AC51CEA395F1C20DB /* Pods */,
+				DFD3068A2D480D1600B4EAEE /* Recovered References */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -153,22 +213,82 @@
 		BBD78D7AC51CEA395F1C20DB /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				3B4392A12AC88292D35C810B /* Pods-LineChart.debug.xcconfig */,
-				5709B34CF0A7D63546082F79 /* Pods-LineChart.release.xcconfig */,
-				5B7EB9410499542E8C5724F5 /* Pods-LineChart-LineChartTests.debug.xcconfig */,
-				89C6BE57DB24E9ADA2F236DE /* Pods-LineChart-LineChartTests.release.xcconfig */,
+				FDF226E1D29478CDA53D4AE0 /* Pods-LineChart.debug.xcconfig */,
+				44C104957A2AF9A25384DB7A /* Pods-LineChart.release.xcconfig */,
+				AC8D71672AE7227763D60B3B /* Pods-LineChart-LineChartTests.debug.xcconfig */,
+				2BE20259A62D3EFB9A2D5B90 /* Pods-LineChart-LineChartTests.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		DF28220D2D4645B3004BA75A /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				DF9678262D50260A00B75978 /* BalloonMarker.swift */,
+				DF4FACA82D5161E6006F32BC /* IMarker.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		DF2822162D46CE67004BA75A /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				DFA59D7B2D58DD8900C2B71F /* UIColor+Hex.swift */,
+			);
+			path = utils;
+			sourceTree = "<group>";
+		};
+		DF3FBDA92D45914C001E5076 /* Formatters */ = {
+			isa = PBXGroup;
+			children = (
+				DF3FBDAA2D459155001E5076 /* DateValueFormatter.swift */,
+				DF3FBDAC2D459193001E5076 /* IntAxisValueFormatter.swift */,
+			);
+			path = Formatters;
 			sourceTree = "<group>";
 		};
 		DF61CC582D385298001C2DE8 /* RTNCenteredText */ = {
 			isa = PBXGroup;
 			children = (
-				DF61CC5D2D38533D001C2DE8 /* RTNCenteredText.h */,
-				DF61CC5E2D38533D001C2DE8 /* RTNCenteredText.mm */,
-				DF61CC612D385354001C2DE8 /* RTNCenteredTextManager.mm */,
+				DF61CC5D2D38533D001C2DE8 /* CenteredTextViewComponentView.h */,
+				DF61CC5E2D38533D001C2DE8 /* CenteredTextViewComponentView.mm */,
+				DF61CC612D385354001C2DE8 /* CenteredTextViewManager.mm */,
+				DFEF32EF2D3AE76C00F9CA65 /* CenteredTextViewManager.swift */,
+				DFEF32F12D3AE78E00F9CA65 /* CenteredTextView.swift */,
+				DFEF32F32D3AEED000F9CA65 /* LineChart-Bridging-Header.h */,
 			);
 			path = RTNCenteredText;
+			sourceTree = "<group>";
+		};
+		DF952EFC2D416E7E00DE4E94 /* RTNLineChart */ = {
+			isa = PBXGroup;
+			children = (
+				DFD306902D4827EC00B4EAEE /* Objective-C */,
+				DF2822162D46CE67004BA75A /* utils */,
+				DF28220D2D4645B3004BA75A /* Components */,
+				DF3FBDA92D45914C001E5076 /* Formatters */,
+				DF952EFD2D416EE600DE4E94 /* LineChartSpecViewComponentView.h */,
+				DF952F002D416F8600DE4E94 /* LineChartSpecViewManager.mm */,
+				DF952F012D416FB800DE4E94 /* LineChartSpecViewComponentView.mm */,
+				DF952F032D416FDB00DE4E94 /* LineChartSpecViewManager.swift */,
+				DF952F052D416FEE00DE4E94 /* LineChartSpecView.swift */,
+				DF81B7842D42E9100081B578 /* LineChart-Bridging-Header.h */,
+			);
+			path = RTNLineChart;
+			sourceTree = "<group>";
+		};
+		DFD3068A2D480D1600B4EAEE /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Recovered References";
+			sourceTree = "<group>";
+		};
+		DFD306902D4827EC00B4EAEE /* Objective-C */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Objective-C";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -178,12 +298,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "LineChartTests" */;
 			buildPhases = (
-				A55EABD7B0C7F3A422A6CC61 /* [CP] Check Pods Manifest.lock */,
+				D91FC9432093F48A9AC732A2 /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
-				C59DA0FBD6956966B86A3779 /* [CP] Embed Pods Frameworks */,
-				F6A41C54EA430FDDC6A6ED99 /* [CP] Copy Pods Resources */,
+				1225C44007363885C3FE6753 /* [CP] Embed Pods Frameworks */,
+				76B064A6D3E25FB1422F1D52 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -199,13 +319,14 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "LineChart" */;
 			buildPhases = (
-				C38B50BA6285516D6DCD4F65 /* [CP] Check Pods Manifest.lock */,
+				FA7657CD0F1E0206E219C5D4 /* [CP] Check Pods Manifest.lock */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
-				00EEFC60759A1932668264C0 /* [CP] Embed Pods Frameworks */,
-				E235C05ADACE081382539298 /* [CP] Copy Pods Resources */,
+				DFBFD2E22D497901005FBF4E /* Embed Frameworks */,
+				55840CDD058CD83B24CFF759 /* [CP] Embed Pods Frameworks */,
+				E289F9925D7E4ECF7FC28BCE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -289,7 +410,24 @@
 			shellPath = /bin/sh;
 			shellScript = "set -e\n\nWITH_ENVIRONMENT=\"$REACT_NATIVE_PATH/scripts/xcode/with-environment.sh\"\nREACT_NATIVE_XCODE=\"$REACT_NATIVE_PATH/scripts/react-native-xcode.sh\"\n\n/bin/sh -c \"$WITH_ENVIRONMENT $REACT_NATIVE_XCODE\"\n";
 		};
-		00EEFC60759A1932668264C0 /* [CP] Embed Pods Frameworks */ = {
+		1225C44007363885C3FE6753 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LineChart-LineChartTests/Pods-LineChart-LineChartTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LineChart-LineChartTests/Pods-LineChart-LineChartTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LineChart-LineChartTests/Pods-LineChart-LineChartTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		55840CDD058CD83B24CFF759 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -306,7 +444,24 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LineChart/Pods-LineChart-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		A55EABD7B0C7F3A422A6CC61 /* [CP] Check Pods Manifest.lock */ = {
+		76B064A6D3E25FB1422F1D52 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LineChart-LineChartTests/Pods-LineChart-LineChartTests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LineChart-LineChartTests/Pods-LineChart-LineChartTests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LineChart-LineChartTests/Pods-LineChart-LineChartTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D91FC9432093F48A9AC732A2 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -328,7 +483,24 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		C38B50BA6285516D6DCD4F65 /* [CP] Check Pods Manifest.lock */ = {
+		E289F9925D7E4ECF7FC28BCE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LineChart/Pods-LineChart-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LineChart/Pods-LineChart-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LineChart/Pods-LineChart-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FA7657CD0F1E0206E219C5D4 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -350,57 +522,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		C59DA0FBD6956966B86A3779 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-LineChart-LineChartTests/Pods-LineChart-LineChartTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-LineChart-LineChartTests/Pods-LineChart-LineChartTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LineChart-LineChartTests/Pods-LineChart-LineChartTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		E235C05ADACE081382539298 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-LineChart/Pods-LineChart-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-LineChart/Pods-LineChart-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LineChart/Pods-LineChart-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F6A41C54EA430FDDC6A6ED99 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-LineChart-LineChartTests/Pods-LineChart-LineChartTests-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-LineChart-LineChartTests/Pods-LineChart-LineChartTests-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LineChart-LineChartTests/Pods-LineChart-LineChartTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -416,10 +537,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */,
-				DF61CC622D385354001C2DE8 /* RTNCenteredTextManager.mm in Sources */,
+				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
+				DF61CC622D385354001C2DE8 /* CenteredTextViewManager.mm in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
-				DF61CC5F2D38533D001C2DE8 /* RTNCenteredText.mm in Sources */,
+				DF3FBDAD2D459193001E5076 /* IntAxisValueFormatter.swift in Sources */,
+				DF9678272D50260A00B75978 /* BalloonMarker.swift in Sources */,
+				DFEF32F02D3AE76C00F9CA65 /* CenteredTextViewManager.swift in Sources */,
+				DFA59D7C2D58DD8900C2B71F /* UIColor+Hex.swift in Sources */,
+				DF952F042D416FDB00DE4E94 /* LineChartSpecViewManager.swift in Sources */,
+				DF952F062D416FEE00DE4E94 /* LineChartSpecView.swift in Sources */,
+				DF3FBDA82D4549D0001E5076 /* LineChartSpecViewManager.mm in Sources */,
+				DF4FACA92D5161E6006F32BC /* IMarker.swift in Sources */,
+				DF952F022D416FB800DE4E94 /* LineChartSpecViewComponentView.mm in Sources */,
+				DF61CC5F2D38533D001C2DE8 /* CenteredTextViewComponentView.mm in Sources */,
+				DF3FBDAB2D459155001E5076 /* DateValueFormatter.swift in Sources */,
+				DFEF32F22D3AE78E00F9CA65 /* CenteredTextView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -436,8 +568,9 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5B7EB9410499542E8C5724F5 /* Pods-LineChart-LineChartTests.debug.xcconfig */;
+			baseConfigurationReference = AC8D71672AE7227763D60B3B /* Pods-LineChart-LineChartTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -463,8 +596,9 @@
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 89C6BE57DB24E9ADA2F236DE /* Pods-LineChart-LineChartTests.release.xcconfig */;
+			baseConfigurationReference = 2BE20259A62D3EFB9A2D5B90 /* Pods-LineChart-LineChartTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
 				INFOPLIST_FILE = LineChartTests/Info.plist;
@@ -487,12 +621,78 @@
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3B4392A12AC88292D35C810B /* Pods-LineChart.debug.xcconfig */;
+			baseConfigurationReference = FDF226E1D29478CDA53D4AE0 /* Pods-LineChart.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = NO;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
 				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Charts\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/DGCharts\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/DeviceKit\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/DoubleConversion\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/RCT-Folly\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/RCTDeprecation\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/RCTTypeSafety\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-Core\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-CoreModules\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-Fabric\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-FabricComponents\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-FabricImage\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-ImageManager\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-Mapbuffer\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-NativeModulesApple\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-RCTAnimation\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-RCTAppDelegate\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-RCTBlob\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-RCTFabric\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-RCTImage\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-RCTLinking\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-RCTNetwork\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-RCTSettings\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-RCTText\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-RCTVibration\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-RuntimeApple\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-RuntimeCore\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-RuntimeHermes\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-cxxreact\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-debug\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-defaultsnativemodule\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-domnativemodule\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-featureflags\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-featureflagsnativemodule\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-graphics\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-hermes\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-idlecallbacksnativemodule\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-jserrorhandler\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-jsi\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-jsiexecutor\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-jsinspector\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-logger\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-microtasksnativemodule\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-nativeconfig\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-perflogger\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-performancetimeline\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-rendererconsistency\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-rendererdebug\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-runtimescheduler\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-utils\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/ReactCodegen\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/ReactCommon\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/SocketRocket\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/SwiftAlgorithms\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Yoga\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/fmt\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/glog\"",
+					"\"${PODS_ROOT}/hermes-engine/destroot/Library/Frameworks/universal\"",
+					"\"${PODS_XCFRAMEWORKS_BUILD_DIR}/hermes-engine/Pre-built\"",
+					"$(PROJECT_DIR)/Frameworks/",
+				);
 				INFOPLIST_FILE = LineChart/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -507,7 +707,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = LineChart;
-				SWIFT_OBJC_BRIDGING_HEADER = "NativeDeviceInformation/LineChart-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/RTNLineChart/LineChart-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -516,11 +716,14 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5709B34CF0A7D63546082F79 /* Pods-LineChart.release.xcconfig */;
+			baseConfigurationReference = 44C104957A2AF9A25384DB7A /* Pods-LineChart.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = NO;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
 				INFOPLIST_FILE = LineChart/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -535,7 +738,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = LineChart;
-				SWIFT_OBJC_BRIDGING_HEADER = "NativeDeviceInformation/LineChart-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/RTNLineChart/LineChart-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -544,6 +747,7 @@
 		83CBBA201A601CBA00E9B192 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "c++20";
@@ -596,6 +800,14 @@
 					"$(SRCROOT)/node_modules/react-native/React/Renderer/**",
 					"$(SRCROOT)/node_modules/react-native/ReactCommon/**",
 					"$(SRCROOT)/node_modules/react-native/React/Fabric/**",
+					"${PODS_CONFIGURATION_BUILD_DIR}/ReactCommon/ReactCommon.framework/Headers",
+					"${PODS_CONFIGURATION_BUILD_DIR}/ReactCommon/ReactCommon.framework/Headers/react/nativemodule/core",
+					"${PODS_CONFIGURATION_BUILD_DIR}/ReactCommon-Samples/ReactCommon_Samples.framework/Headers",
+					"${PODS_CONFIGURATION_BUILD_DIR}/ReactCommon-Samples/ReactCommon_Samples.framework/Headers/platform/ios",
+					"${PODS_CONFIGURATION_BUILD_DIR}/React-Fabric/React_Fabric.framework/Headers/react/renderer/components/view/platform/cxx",
+					"${PODS_CONFIGURATION_BUILD_DIR}/React-NativeModulesApple/React_NativeModulesApple.framework/Headers",
+					"${PODS_CONFIGURATION_BUILD_DIR}/React-graphics/React_graphics.framework/Headers",
+					"${PODS_CONFIGURATION_BUILD_DIR}/React-graphics/React_graphics.framework/Headers/react/renderer/graphics/platform/ios",
 				);
 				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -617,10 +829,7 @@
 					"-DFOLLY_CFG_NO_COROUTINES=1",
 					"-DFOLLY_HAVE_CLOCK_GETTIME=1",
 				);
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					" ",
-				);
+				OTHER_LDFLAGS = "$(inherited)  ";
 				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) DEBUG";
@@ -631,6 +840,7 @@
 		83CBBA211A601CBA00E9B192 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "c++20";
@@ -676,6 +886,14 @@
 					"$(SRCROOT)/node_modules/react-native/React/Renderer/**",
 					"$(SRCROOT)/node_modules/react-native/ReactCommon/**",
 					"$(SRCROOT)/node_modules/react-native/React/Fabric/**",
+					"${PODS_CONFIGURATION_BUILD_DIR}/ReactCommon/ReactCommon.framework/Headers",
+					"${PODS_CONFIGURATION_BUILD_DIR}/ReactCommon/ReactCommon.framework/Headers/react/nativemodule/core",
+					"${PODS_CONFIGURATION_BUILD_DIR}/ReactCommon-Samples/ReactCommon_Samples.framework/Headers",
+					"${PODS_CONFIGURATION_BUILD_DIR}/ReactCommon-Samples/ReactCommon_Samples.framework/Headers/platform/ios",
+					"${PODS_CONFIGURATION_BUILD_DIR}/React-Fabric/React_Fabric.framework/Headers/react/renderer/components/view/platform/cxx",
+					"${PODS_CONFIGURATION_BUILD_DIR}/React-NativeModulesApple/React_NativeModulesApple.framework/Headers",
+					"${PODS_CONFIGURATION_BUILD_DIR}/React-graphics/React_graphics.framework/Headers",
+					"${PODS_CONFIGURATION_BUILD_DIR}/React-graphics/React_graphics.framework/Headers/react/renderer/graphics/platform/ios",
 				);
 				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -696,10 +914,7 @@
 					"-DFOLLY_CFG_NO_COROUTINES=1",
 					"-DFOLLY_HAVE_CLOCK_GETTIME=1",
 				);
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					" ",
-				);
+				OTHER_LDFLAGS = "$(inherited)  ";
 				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
 				USE_HERMES = true;

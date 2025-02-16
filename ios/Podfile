@@ -11,15 +11,18 @@ prepare_react_native_project!
 linkage = ENV['USE_FRAMEWORKS']
 if linkage != nil
   Pod::UI.puts "Configuring Pod with #{linkage}ally linked Frameworks".green
-  use_frameworks! :linkage => linkage.to_sym
+  use_frameworks! :linkage => :static
 end
 
 target 'LineChart' do
   config = use_native_modules!
+   
+  pod 'React-Core', :path => '../node_modules/react-native/'
   
   pod 'DeviceKit', '~> 5.5'
-
-
+  pod 'DGCharts', '~> 5.0.0'
+ 
+  
   use_react_native!(
     :path => config[:reactNativePath],
     # An absolute path to your application root.
