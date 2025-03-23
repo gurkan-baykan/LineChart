@@ -12,8 +12,11 @@
 #import <React/RCTEventEmitter.h>
 #import <React/RCTViewManager.h>
 #import <React/RCTComponent.h>
+#import <UIKit/UIKit.h>
 
 @protocol ChartMarker;
-
+@protocol AxisRenderer;
+@protocol ChartViewDelegate;
 
 #endif /* LineChart_Bridging_Header_h */
+

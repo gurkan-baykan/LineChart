@@ -20,7 +20,7 @@ target 'LineChart' do
   pod 'React-Core', :path => '../node_modules/react-native/'
   
   pod 'DeviceKit', '~> 5.5'
-  pod 'DGCharts', '~> 5.0.0'
+  pod 'DGCharts', '~> 5.1.0'
  
   
   use_react_native!(

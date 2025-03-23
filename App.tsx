@@ -1,85 +1,63 @@
-import React, {useEffect, useState} from 'react';
-import {SafeAreaView, ScrollView, Text, StyleSheet, View} from 'react-native';
-
-//import NativeDeviceInformation from './specs/NativeDeviceInformation';
-import RTNCenteredText from './src/specs/CenteredTextNativeComponent';
-import LineChartSpecView, {
-  LabelPosition,
-  LineData,
-} from './src/specs/LineChartNativeComponent';
-import PropTypes from 'prop-types';
-
-type TDeviceInfo = {
-  isBatteryCharging: boolean;
-  isACBatteryCharge: boolean;
-  isUSBBatteryCharge: boolean;
-  batteryPercentage: number;
-  isLowMemory: boolean;
-  availableMemory: string;
-  totalMemory: string;
-  appVersion: string;
-  deviceBrand: string;
-  device: string;
-  deviceModel: string;
-  deviceManufacturer: string;
-  product: string;
-  osName: string;
-  osVersion: string;
-  hardware: string;
-};
+import React from 'react';
+import {SafeAreaView, StyleSheet, View} from 'react-native';
+import LineChartSpecView from './src/specs/LineChartNativeComponent';
 
 function App(): JSX.Element {
-  const [deviceInfo, setDeviceInfo] = useState<TDeviceInfo | null>(null);
+  const count = 16;
+  const range = 50;
 
-  // useEffect(() => {
-  //   if (NativeDeviceInformation) {
-  //     setDeviceInfo({
-  //       isBatteryCharging:
-  //         NativeDeviceInformation?.getIsBatteryCharging() as boolean,
-  //       isACBatteryCharge:
-  //         NativeDeviceInformation?.getIsACBatteryCharge() as boolean,
-  //       isUSBBatteryCharge:
-  //         NativeDeviceInformation?.getIsUSBBatteryCharge() as boolean,
-  //       batteryPercentage:
-  //         NativeDeviceInformation?.getBatteryPercentage() as number,
-  //       isLowMemory: NativeDeviceInformation?.getIsLowMemory() as boolean,
-  //       availableMemory:
-  //         NativeDeviceInformation?.getAvailableMemory() as string,
-  //       totalMemory: NativeDeviceInformation?.getTotalMemory() as string,
-  //       appVersion: NativeDeviceInformation?.getReadableVersion() as string,
-  //       deviceBrand: NativeDeviceInformation?.getDeviceBrand() as string,
-  //       device: NativeDeviceInformation?.getDevice() as string,
-  //       deviceModel: NativeDeviceInformation?.getDeviceModel() as string,
-  //       deviceManufacturer:
-  //         NativeDeviceInformation?.getDeviceManufacturer() as string,
-  //       product: NativeDeviceInformation?.getProduct() as string,
-  //       osName: NativeDeviceInformation?.getOsName() as string,
-  //       osVersion: NativeDeviceInformation?.getOsVersion() as string,
-  //       hardware: NativeDeviceInformation?.getHardware() as string,
-  //     });
-  //   }
-  // }, []);
-
-  const count = 15; // Kaç veri noktası oluşturulacağını belirler
-  const range = 100; // Rastgele sayının üst sınırı (0 ile range arasında)
+  const count2 = 16;
+  const range2 = 50;
 
   const values = Array.from({length: count}, (_, i) => {
-    const val = Math.floor(Math.random() * range) + 3; // 0 ile range arasında bir sayı üret ve 3 ekle
-    return {x: i, y: val}; // Veriyi obje olarak oluştur
+    const val = Math.floor(Math.random() * range) + 3;
+    return {x: i, y: val};
+  });
+
+  const values2 = Array.from({length: count}, (_, i) => {
+    const val = Math.floor(Math.random() * range) + 3;
+    return {x: i, y: val};
   });
 
   const lineData = {
     dataSets: [
       {
         values: values,
-        label: 'Dilek native linecharti',
+        drawVerticalHighlightIndicatorEnabled: true,
+        drawValuesEnabled: false,
+        mode: 'linear',
+        drawHorizontalHighlightIndicatorEnabled: false,
+        gradientColorsData: {from: '#ffffff', to: '#080707'},
+        label: 'Chart',
+        limitLineEntity: {
+          lineWidth: 2.0,
+          lineColor: '#d6371e',
+          lineDashLengths: [5, 2],
+          labelPosition: 'leftTop',
+          labelValueColor: '#d6371e',
+          fontSize: 15,
+          limit: 25,
+        },
+      },
+      {
+        limitLineEntity: {
+          lineWidth: 2.0,
+          lineColor: '#00a32c',
+          lineDashLengths: [5, 3],
+          labelPosition: 'leftTop',
+          labelValueColor: '#00a32c',
+          fontSize: 15,
+          limit: 25,
+        },
+        values: values2,
+        drawVerticalHighlightIndicatorEnabled: true,
+        drawValuesEnabled: false,
+        mode: 'linear',
+        drawHorizontalHighlightIndicatorEnabled: false,
+        gradientColorsData: {from: '#ffffff', to: '#080707'},
+        label: '',
       },
     ],
-    drawVerticalHighlightIndicatorEnabled: true,
-    drawValuesEnabled: true,
-    mode: 'lienar',
-    drawHorizontalHighlightIndicatorEnabled: true,
-    gradientColorsData: {from: '#f5f0f0', to: '#d6371e'},
   };
 
   return (
@@ -87,37 +65,48 @@ function App(): JSX.Element {
       <View
         style={{
           flex: 1,
-          height: 300,
+          height: 550,
           justifyContent: 'center',
           alignItems: 'center',
         }}>
         <LineChartSpecView
           data={lineData}
           markerEntity={{
-            bgColor: '#d6371e',
-            color: 'white',
-            fontSize: 14,
-            circleEntity: {size: 18, color: '#1e498f'},
-            position: {left: 8, top: 8, bottom: 20, right: 8},
+            color: '#161617',
+            fontSize: 16,
+            bgColor: '#ffffff',
+            circleEntity: {size: 15, color: '#1e498f'},
+            position: {left: 8, top: 0, bottom: 0, right: 8},
           }}
           xAxisEntity={{
             drawLabelsEnabled: true,
             labelPosition: 'bottom',
-            labelFont: {size: 12, weight: 'bold'},
-            labelTextColor: '#1e498f',
-            yOffset: 5,
+            labelFont: {size: 15, weight: 'bold'},
+            labelTextColor: '#080707',
+            yOffset: 0,
+            xOffset: 0,
           }}
           yAxisEntity={{
             drawLabelsEnabled: true,
             labelPosition: 'outside',
-            labelFont: {size: 10, weight: 'bold'},
-            labelTextColor: '#d6371e',
+            labelFont: {size: 15, weight: 'bold'},
+            labelTextColor: '#080707',
             xOffset: 0,
+            yOffset: 0,
+            axisMin: 0,
+            axisMax: 120,
           }}
+          animationEntity={{
+            xAxisDuration: 0.8,
+            xAxisEasing: 'linear',
+            yAxisDuration: 1,
+            yAxisEasing: 'linear',
+          }}
+          drawGridLinesEnabled={true}
           highlightPerTapEnabled={true}
           highlightPerDragEnabled={true}
           dragEnabled={true}
-          style={{width: '100%', height: '50%'}}
+          style={{width: '100%', height: 500, margin: 16}}
         />
       </View>
     </SafeAreaView>
@@ -128,84 +117,6 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#f4f6f8',
-  },
-  chart: {
-    width: 300,
-    height: 300,
-  },
-  scrollContent: {
-    paddingBottom: 30,
-  },
-  headerGradient: {
-    paddingVertical: 20,
-    paddingHorizontal: 20,
-    alignItems: 'center',
-    shadowColor: '#000',
-    shadowOffset: {width: 0, height: 2},
-    shadowOpacity: 0.2,
-    shadowRadius: 4,
-    elevation: 5,
-  },
-  headerTitle: {
-    color: 'white',
-    fontSize: 22,
-    fontWeight: '700',
-    letterSpacing: 1,
-  },
-  contentContainer: {
-    paddingHorizontal: 15,
-    paddingTop: 20,
-  },
-  sectionContainer: {
-    marginBottom: 20,
-    backgroundColor: 'white',
-    borderRadius: 15,
-    shadowColor: '#000',
-    shadowOffset: {width: 0, height: 2},
-    shadowOpacity: 0.1,
-    shadowRadius: 4,
-    elevation: 3,
-    overflow: 'hidden',
-  },
-  sectionTitleContainer: {
-    paddingHorizontal: 15,
-    paddingTop: 15,
-    paddingBottom: 10,
-  },
-  sectionTitle: {
-    fontSize: 18,
-    fontWeight: '700',
-    color: '#2c3e50',
-    marginBottom: 5,
-  },
-  sectionTitleUnderline: {
-    height: 3,
-    width: 50,
-    backgroundColor: '#3498db',
-    borderRadius: 2,
-  },
-  infoRowContainer: {
-    paddingHorizontal: 0,
-  },
-  infoRowGradient: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    alignItems: 'center',
-    paddingVertical: 12,
-    paddingHorizontal: 15,
-  },
-  infoLabel: {
-    fontSize: 16,
-    color: '#34495e',
-    fontWeight: '600',
-    width: '40%',
-  },
-  infoValue: {
-    fontSize: 16,
-    color: '#2c3e50',
-    fontWeight: '500',
-    width: '60%',
-    textAlign: 'right',
   },
 });
 

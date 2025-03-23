@@ -12,4 +12,7 @@ RCT_EXPORT_VIEW_PROPERTY(markerEntity, NSDictionary)
 RCT_EXPORT_VIEW_PROPERTY(dragEnabled, BOOL) 
 RCT_EXPORT_VIEW_PROPERTY(highlightPerTapEnabled, BOOL)
 RCT_EXPORT_VIEW_PROPERTY(highlightPerDragEnabled, BOOL)
+RCT_EXPORT_VIEW_PROPERTY(bgColor, NSString)
+RCT_EXPORT_VIEW_PROPERTY(drawGridLinesEnabled, BOOL)
+RCT_EXPORT_VIEW_PROPERTY(animationEntity, NSDictionary)
 @end

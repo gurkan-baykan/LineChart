@@ -3,10 +3,10 @@
 #import <React/RCTConversions.h>
 #import <React/RCTViewManager.h>
 
-#import <react/renderer/components/centeredTextSpec/ComponentDescriptors.h>
-#import <react/renderer/components/centeredTextSpec/EventEmitters.h>
-#import <react/renderer/components/centeredTextSpec/Props.h>
-#import <react/renderer/components/centeredTextSpec/RCTComponentViewHelpers.h>
+#import <react/renderer/components/lineChartSpec/ComponentDescriptors.h>
+#import <react/renderer/components/lineChartSpec/EventEmitters.h>
+#import <react/renderer/components/lineChartSpec/Props.h>
+#import <react/renderer/components/lineChartSpec/RCTComponentViewHelpers.h>
 
 #import "LineChart-Swift.h"
 
@@ -49,7 +49,7 @@ using namespace facebook::react;
   NSDictionary *xAxisEntity = @{};
   NSDictionary *yAxisEntity = @{};
   NSDictionary *position = 	@{};
-  
+  NSDictionary *animationEntity = @{};
   // Veri yapısını kontrol etmek için bir yardımcı fonksiyon
   auto hasDataChanged = [](const LineChartSpecViewDataStruct &newData,
                          const LineChartSpecViewDataStruct &oldData) -> bool {
@@ -79,11 +79,14 @@ using namespace facebook::react;
                   return true;
               }
           }
+        
+        if (newDataSet.gradientColorsData.from != oldDataSet.gradientColorsData.from && newDataSet.gradientColorsData.to != oldDataSet.gradientColorsData.to) {
+            return true;
+        }
+        
       }
 
-      if (newData.gradientColorsData.from != oldData.gradientColorsData.from && newData.gradientColorsData.to != oldData.gradientColorsData.to) {
-          return true;
-      }
+     
     
       return false;
   };
@@ -133,6 +136,7 @@ using namespace facebook::react;
     markerEntity = @{
       @"circleEntity": circleEntity,
       @"position":position,
+      @"color":[NSString stringWithUTF8String:newViewProps.markerEntity.color.c_str()],
       @"bgColor":[NSString stringWithUTF8String:newViewProps.markerEntity.bgColor.c_str()],
       @"fontSize":@(newViewProps.markerEntity.fontSize)
     };
@@ -149,6 +153,9 @@ using namespace facebook::react;
         @"labelPosition": [NSString stringWithUTF8String:oldViewProps.xAxisEntity.labelPosition.c_str()],
         @"labelTextColor": [NSString stringWithUTF8String:oldViewProps.xAxisEntity.labelTextColor.c_str()],
         @"yOffset": @(oldViewProps.xAxisEntity.yOffset),
+        @"xOffset": @(oldViewProps.xAxisEntity.xOffset),
+        @"axisMin": @(oldViewProps.xAxisEntity.axisMin),
+        @"axisMax": @(oldViewProps.xAxisEntity.axisMax),
   };
    
   if (newViewProps.xAxisEntity.drawLabelsEnabled != oldViewProps.xAxisEntity.drawLabelsEnabled ) {
@@ -192,6 +199,9 @@ using namespace facebook::react;
           @"labelPosition": [NSString stringWithUTF8String:oldViewProps.yAxisEntity.labelPosition.c_str()],
           @"labelTextColor": [NSString stringWithUTF8String:oldViewProps.yAxisEntity.labelTextColor.c_str()],
           @"xOffset": @(oldViewProps.yAxisEntity.xOffset),
+          @"yOffset": @(oldViewProps.yAxisEntity.yOffset),
+          @"axisMin": @(oldViewProps.yAxisEntity.axisMin),
+          @"axisMax": @(oldViewProps.yAxisEntity.axisMax),
     };
     
     if (newViewProps.yAxisEntity.drawLabelsEnabled != oldViewProps.yAxisEntity.drawLabelsEnabled ) {
@@ -227,7 +237,17 @@ using namespace facebook::react;
       };
     }
           
-  
+      
+      if (newViewProps.animationEntity.xAxisEasing != oldViewProps.animationEntity.xAxisEasing || newViewProps.animationEntity.xAxisDuration != oldViewProps.animationEntity.xAxisDuration || newViewProps.animationEntity.yAxisEasing != oldViewProps.animationEntity.yAxisEasing || newViewProps.animationEntity.yAxisDuration != oldViewProps.animationEntity.yAxisDuration) {
+        animationEntity = @{
+          @"xAxisDuration": @(newViewProps.animationEntity.xAxisDuration),
+          @"xAxisEasing": [NSString stringWithUTF8String:newViewProps.animationEntity.xAxisEasing.c_str()],
+          @"yAxisDuration":  @(newViewProps.animationEntity.yAxisDuration),
+          @"yAxisEasing": [NSString stringWithUTF8String:newViewProps.animationEntity.yAxisEasing.c_str()],
+        };
+        
+        [_lineChartView setAnimationEntity:animationEntity];
+      }
 
   if (newViewProps.dragEnabled != oldViewProps.dragEnabled) {
       [_lineChartView setDragEnabled:newViewProps.dragEnabled];
@@ -240,10 +260,16 @@ using namespace facebook::react;
    if (newViewProps.highlightPerDragEnabled != oldViewProps.highlightPerDragEnabled) {
       [_lineChartView setHighlightPerDragEnabled:newViewProps.highlightPerDragEnabled];
   }
+      
 
+  if (!newViewProps.bgColor.empty()) {
+      NSString *bgColor = [NSString stringWithUTF8String:newViewProps.bgColor.c_str()];
+      [_lineChartView setBgColor:bgColor];
+  }
+     
   [_lineChartView setYAxisEntity:yAxisEntity];
   [_lineChartView setXAxisEntity:xAxisEntity];
-
+  [_lineChartView setDrawGridLinesEnabled:newViewProps.drawGridLinesEnabled];
   [super updateProps:props oldProps:oldProps];
   }
 }

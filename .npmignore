@@ -1,0 +1,8 @@
+node_modules
+example
+.git
+.gitignore
+babel.config.js
+metro.config.js
+android/.gradle
+ios/Pods

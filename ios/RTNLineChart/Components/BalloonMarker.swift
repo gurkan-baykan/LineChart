@@ -84,7 +84,7 @@ class BalloonMarker: UIView, Marker {
 
         let offset = offsetForDrawing(atPoint: point)
         let size = bounds.size
-        
+     
         context.saveGState()
           
       if !circleEntity.isEmpty  {
@@ -110,6 +110,7 @@ class BalloonMarker: UIView, Marker {
 
         context.saveGState()
         context.setFillColor(color.cgColor)
+  
 
         // Ok (arrow) çizen bölüm
         if offset.y > 0 {

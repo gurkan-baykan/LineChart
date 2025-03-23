@@ -19,8 +19,6 @@
 		DF3FBDAB2D459155001E5076 /* DateValueFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3FBDAA2D459155001E5076 /* DateValueFormatter.swift */; };
 		DF3FBDAD2D459193001E5076 /* IntAxisValueFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3FBDAC2D459193001E5076 /* IntAxisValueFormatter.swift */; };
 		DF4FACA92D5161E6006F32BC /* IMarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF4FACA82D5161E6006F32BC /* IMarker.swift */; };
-		DF61CC5F2D38533D001C2DE8 /* CenteredTextViewComponentView.mm in Sources */ = {isa = PBXBuildFile; fileRef = DF61CC5E2D38533D001C2DE8 /* CenteredTextViewComponentView.mm */; };
-		DF61CC622D385354001C2DE8 /* CenteredTextViewManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = DF61CC612D385354001C2DE8 /* CenteredTextViewManager.mm */; };
 		DF86661A2D4D735000D5B6AA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF8666192D4D735000D5B6AA /* UIKit.framework */; };
 		DF86661C2D4D736900D5B6AA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF86661B2D4D736900D5B6AA /* Foundation.framework */; };
 		DF86661E2D4D737700D5B6AA /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF86661D2D4D737700D5B6AA /* QuartzCore.framework */; };
@@ -31,8 +29,7 @@
 		DF952F062D416FEE00DE4E94 /* LineChartSpecView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF952F052D416FEE00DE4E94 /* LineChartSpecView.swift */; };
 		DF9678272D50260A00B75978 /* BalloonMarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9678262D50260A00B75978 /* BalloonMarker.swift */; };
 		DFA59D7C2D58DD8900C2B71F /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFA59D7B2D58DD8900C2B71F /* UIColor+Hex.swift */; };
-		DFEF32F02D3AE76C00F9CA65 /* CenteredTextViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFEF32EF2D3AE76C00F9CA65 /* CenteredTextViewManager.swift */; };
-		DFEF32F22D3AE78E00F9CA65 /* CenteredTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFEF32F12D3AE78E00F9CA65 /* CenteredTextView.swift */; };
+		DFD21FD82D765245005CD960 /* LimitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD21FD72D765245005CD960 /* LimitView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,9 +76,6 @@
 		DF3FBDAA2D459155001E5076 /* DateValueFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateValueFormatter.swift; sourceTree = "<group>"; };
 		DF3FBDAC2D459193001E5076 /* IntAxisValueFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntAxisValueFormatter.swift; sourceTree = "<group>"; };
 		DF4FACA82D5161E6006F32BC /* IMarker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IMarker.swift; sourceTree = "<group>"; };
-		DF61CC5D2D38533D001C2DE8 /* CenteredTextViewComponentView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CenteredTextViewComponentView.h; sourceTree = "<group>"; };
-		DF61CC5E2D38533D001C2DE8 /* CenteredTextViewComponentView.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = CenteredTextViewComponentView.mm; sourceTree = "<group>"; };
-		DF61CC612D385354001C2DE8 /* CenteredTextViewManager.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = CenteredTextViewManager.mm; sourceTree = "<group>"; };
 		DF81B7842D42E9100081B578 /* LineChart-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LineChart-Bridging-Header.h"; sourceTree = "<group>"; };
 		DF8666192D4D735000D5B6AA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		DF86661B2D4D736900D5B6AA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -96,9 +90,7 @@
 		DF9678202D5018F800B75978 /* React.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = React.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF9678262D50260A00B75978 /* BalloonMarker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalloonMarker.swift; sourceTree = "<group>"; };
 		DFA59D7B2D58DD8900C2B71F /* UIColor+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Hex.swift"; sourceTree = "<group>"; };
-		DFEF32EF2D3AE76C00F9CA65 /* CenteredTextViewManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenteredTextViewManager.swift; sourceTree = "<group>"; };
-		DFEF32F12D3AE78E00F9CA65 /* CenteredTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenteredTextView.swift; sourceTree = "<group>"; };
-		DFEF32F32D3AEED000F9CA65 /* LineChart-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LineChart-Bridging-Header.h"; sourceTree = "<group>"; };
+		DFD21FD72D765245005CD960 /* LimitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LimitView.swift; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		FDF226E1D29478CDA53D4AE0 /* Pods-LineChart.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LineChart.debug.xcconfig"; path = "Target Support Files/Pods-LineChart/Pods-LineChart.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -187,7 +179,6 @@
 			isa = PBXGroup;
 			children = (
 				DF952EFC2D416E7E00DE4E94 /* RTNLineChart */,
-				DF61CC582D385298001C2DE8 /* RTNCenteredText */,
 				13B07FAE1A68108700A75B9A /* LineChart */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* LineChartTests */,
@@ -226,6 +217,7 @@
 			children = (
 				DF9678262D50260A00B75978 /* BalloonMarker.swift */,
 				DF4FACA82D5161E6006F32BC /* IMarker.swift */,
+				DFD21FD72D765245005CD960 /* LimitView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -245,19 +237,6 @@
 				DF3FBDAC2D459193001E5076 /* IntAxisValueFormatter.swift */,
 			);
 			path = Formatters;
-			sourceTree = "<group>";
-		};
-		DF61CC582D385298001C2DE8 /* RTNCenteredText */ = {
-			isa = PBXGroup;
-			children = (
-				DF61CC5D2D38533D001C2DE8 /* CenteredTextViewComponentView.h */,
-				DF61CC5E2D38533D001C2DE8 /* CenteredTextViewComponentView.mm */,
-				DF61CC612D385354001C2DE8 /* CenteredTextViewManager.mm */,
-				DFEF32EF2D3AE76C00F9CA65 /* CenteredTextViewManager.swift */,
-				DFEF32F12D3AE78E00F9CA65 /* CenteredTextView.swift */,
-				DFEF32F32D3AEED000F9CA65 /* LineChart-Bridging-Header.h */,
-			);
-			path = RTNCenteredText;
 			sourceTree = "<group>";
 		};
 		DF952EFC2D416E7E00DE4E94 /* RTNLineChart */ = {
@@ -538,20 +517,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
-				DF61CC622D385354001C2DE8 /* CenteredTextViewManager.mm in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 				DF3FBDAD2D459193001E5076 /* IntAxisValueFormatter.swift in Sources */,
+				DFD21FD82D765245005CD960 /* LimitView.swift in Sources */,
 				DF9678272D50260A00B75978 /* BalloonMarker.swift in Sources */,
-				DFEF32F02D3AE76C00F9CA65 /* CenteredTextViewManager.swift in Sources */,
 				DFA59D7C2D58DD8900C2B71F /* UIColor+Hex.swift in Sources */,
 				DF952F042D416FDB00DE4E94 /* LineChartSpecViewManager.swift in Sources */,
 				DF952F062D416FEE00DE4E94 /* LineChartSpecView.swift in Sources */,
 				DF3FBDA82D4549D0001E5076 /* LineChartSpecViewManager.mm in Sources */,
 				DF4FACA92D5161E6006F32BC /* IMarker.swift in Sources */,
 				DF952F022D416FB800DE4E94 /* LineChartSpecViewComponentView.mm in Sources */,
-				DF61CC5F2D38533D001C2DE8 /* CenteredTextViewComponentView.mm in Sources */,
 				DF3FBDAB2D459155001E5076 /* DateValueFormatter.swift in Sources */,
-				DFEF32F22D3AE78E00F9CA65 /* CenteredTextView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -829,7 +805,10 @@
 					"-DFOLLY_CFG_NO_COROUTINES=1",
 					"-DFOLLY_HAVE_CLOCK_GETTIME=1",
 				);
-				OTHER_LDFLAGS = "$(inherited)  ";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					" ",
+				);
 				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) DEBUG";
@@ -914,7 +893,10 @@
 					"-DFOLLY_CFG_NO_COROUTINES=1",
 					"-DFOLLY_HAVE_CLOCK_GETTIME=1",
 				);
-				OTHER_LDFLAGS = "$(inherited)  ";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					" ",
+				);
 				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
 				USE_HERMES = true;
