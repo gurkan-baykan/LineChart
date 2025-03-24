@@ -240,7 +240,7 @@ return (
   drawVerticalHighlightIndicatorEnabled: boolean;
   drawHorizontalHighlightIndicatorEnabled: boolean;
   drawValuesEnabled: boolean;
-  mode: string;
+  mode: Mode;
 }
 ```
 
@@ -259,7 +259,7 @@ return (
 }
 ```
 
-#### Line Chart Type (mode prop)
+#### Line Chart Type (Mode prop)
 
 ```typescript
 mode: 'cubicBezier' | 'stepped' | 'linear' | 'horizontalBezier';
