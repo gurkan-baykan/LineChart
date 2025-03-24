@@ -269,4 +269,4 @@ mode: 'cubicBezier' | 'stepped' | 'linear' | 'horizontalBezier';
 
 **CoupleLineChart**
 
-<img src="./assets/couple.png" alt="Couple Line Chart Example" width="300" style="border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" />
+<img src="https://raw.githubusercontent.com/gurkan-baykan/LineChart/main/assets/couple.png" alt="Couple Line Chart Example" width="300" style="border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" />
