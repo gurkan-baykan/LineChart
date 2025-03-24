@@ -8,3 +8,4 @@ android/.gradle
 ios/Pods
 android/
 assets/
+node_modules/
