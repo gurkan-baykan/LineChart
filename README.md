@@ -16,9 +16,9 @@ yarn add @baykan/react-native-linechart-native
 
 **Example Screenshots**
 
-| iOS Example                                                                                             | Android Example                                |
-| ------------------------------------------------------------------------------------------------------- | ---------------------------------------------- |
-| <img src="https://raw.githubusercontent.com/gurkan-baykan/LineChart/main/assets/ios.png" width="300" /> | <img src="./assets/android.png" width="300" /> |
+| iOS Example                                                                                             | Android Example                                                                                             |
+| ------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
+| <img src="https://raw.githubusercontent.com/gurkan-baykan/LineChart/main/assets/ios.png" width="300" /> | <img src="https://raw.githubusercontent.com/gurkan-baykan/LineChart/main/assets/android.png" width="300" /> |
 
 **Example Usage**
 
