@@ -6,3 +6,5 @@ babel.config.js
 metro.config.js
 android/.gradle
 ios/Pods
+android/
+assets/
