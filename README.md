@@ -16,7 +16,7 @@ yarn add @baykan/react-native-linechart-native
 
 **Example Screenshots**
 
-<div style="display: flex; justify-content: space-between; margin: 20px 0;">
+<div style="display: flex;flex-direction:row;justify-content: space-between; margin: 20px 0;">
 
 **iOS Example**
 
