@@ -6,7 +6,6 @@ export interface DataSetEntry {
   x: Int32;
   y: Int32;
 }
-//npx @react-native-community/cli codegen --platform ios
 
 export type Mode = 'cubicBezier' | 'stepped' | 'linear' | 'horizontalBezier';
 

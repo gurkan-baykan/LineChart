@@ -259,6 +259,12 @@ return (
 }
 ```
 
+#### Line Chart Type (mode prop)
+
+```typescript
+mode: 'cubicBezier' | 'stepped' | 'linear' | 'horizontalBezier';
+```
+
 ---
 
 **CoupleLineChart**
