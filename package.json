@@ -1,7 +1,6 @@
 {
   "name": "@baykan/react-native-linechart-native",
-  "version": "1.0.0",
-  "private": true,
+  "version": "1.0.9",
   "scripts": {
     "android": "react-native run-android",
     "ios": "react-native run-ios",
@@ -10,11 +9,10 @@
     "test": "jest"
   },
   "files": [
-    "android",
-    "ios",
     "dist",
     "LineChart.podspec",
     "src",
+    "assets/",
     "jestSetup.js"
   ],
   "codegenConfig": {

@@ -2,12 +2,12 @@ import React from 'react';
 import {SafeAreaView, StyleSheet, View} from 'react-native';
 import LineChartSpecView from './src/specs/LineChartNativeComponent';
 
-function App(): JSX.Element {
+function Component(): JSX.Element {
   const count = 16;
   const range = 50;
 
-  const count2 = 16;
-  const range2 = 50;
+  const count2 = 10;
+  const range2 = 80;
 
   const values = Array.from({length: count}, (_, i) => {
     const val = Math.floor(Math.random() * range) + 3;
@@ -27,7 +27,7 @@ function App(): JSX.Element {
         drawValuesEnabled: false,
         mode: 'linear',
         drawHorizontalHighlightIndicatorEnabled: false,
-        gradientColorsData: {from: '#ffffff', to: '#080707'},
+        gradientColorsData: {from: '#db4730', to: '#080707'},
         label: 'Chart',
         limitLineEntity: {
           lineWidth: 2.0,
@@ -36,16 +36,16 @@ function App(): JSX.Element {
           labelPosition: 'leftTop',
           labelValueColor: '#d6371e',
           fontSize: 15,
-          limit: 25,
+          limit: 12,
         },
       },
       {
         limitLineEntity: {
           lineWidth: 2.0,
-          lineColor: '#00a32c',
+          lineColor: '#1a1818',
           lineDashLengths: [5, 3],
           labelPosition: 'leftTop',
-          labelValueColor: '#00a32c',
+          labelValueColor: '#1a1818',
           fontSize: 15,
           limit: 25,
         },
@@ -54,8 +54,8 @@ function App(): JSX.Element {
         drawValuesEnabled: false,
         mode: 'linear',
         drawHorizontalHighlightIndicatorEnabled: false,
-        gradientColorsData: {from: '#ffffff', to: '#080707'},
-        label: '',
+        gradientColorsData: {from: '#659df7', to: '#577ebd'},
+        label: 'Chart-2',
       },
     ],
   };
@@ -120,4 +120,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default App;
+export default Component;
