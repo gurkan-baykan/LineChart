@@ -16,17 +16,9 @@ yarn add @baykan/react-native-linechart-native
 
 **Example Screenshots**
 
-<div style="display: flex;flex-direction:row;justify-content: space-between; margin: 20px 0;">
-
-**iOS Example**
-
-<img src="./assets/ios.png" alt="iOS Line Chart Example" width="300" style="border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" />
-
-**Android Example**
-
-<img src="./assets/android.png" alt="Android Line Chart Example" width="300" style="border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" />
-
-</div>
+| iOS Example                                | Android Example                                |
+| ------------------------------------------ | ---------------------------------------------- |
+| <img src="./assets/ios.png" width="300" /> | <img src="./assets/android.png" width="300" /> |
 
 **Example Usage**
 
