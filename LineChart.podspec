@@ -20,6 +20,6 @@ Pod::Spec.new do |s|
     install_modules_dependencies(s)
   else
     s.dependency "React-Core"
-
+    s.dependency "DGCharts"
   end
 end
