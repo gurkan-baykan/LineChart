@@ -21,7 +21,7 @@ DerivedData
 *.ipa
 *.xcuserstate
 **/.xcode.env.local
-ios/RTNLineChart
+ios/RTNLineChart/
 # Android/IntelliJ
 #
 build/
