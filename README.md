@@ -14,8 +14,10 @@ Below is the command to install the package
 yarn add @baykan/react-native-linechart-native
 ```
 
+Just for Ios:
+
 ```bash
-Just for Ios pod install
+ pod install
 ```
 
 **Example Screenshots**
@@ -248,7 +250,7 @@ return (
 }
 ```
 
-#### limitLineEntity
+#### LimitLineEntity
 
 ```typescript
 {
@@ -267,6 +269,44 @@ return (
 
 ```typescript
 mode: 'cubicBezier' | 'stepped' | 'linear' | 'horizontalBezier';
+```
+
+#### Line Chart Type xAxisEasing,yAxisEasing
+
+```typescript
+ChartEasingOptionProps: {
+  Linear = 'linear',
+  EaseInQuad = 'easeInQuad',
+  EaseOutQuad = 'easeOutQuad',
+  EaseInOutQuad = 'easeInOutQuad',
+  EaseInCubic = 'easeInCubic',
+  EaseOutCubic = 'easeOutCubic',
+  EaseInOutCubic = 'easeInOutCubic',
+  EaseInQuart = 'easeInQuart',
+  EaseOutQuart = 'easeOutQuart',
+  EaseInOutQuart = 'easeInOutQuart',
+  EaseInQuint = 'easeInQuint',
+  EaseOutQuint = 'easeOutQuint',
+  EaseInOutQuint = 'easeInOutQuint',
+  EaseInSine = 'easeInSine',
+  EaseOutSine = 'easeOutSine',
+  EaseInOutSine = 'easeInOutSine',
+  EaseInExpo = 'easeInExpo',
+  EaseOutExpo = 'easeOutExpo',
+  EaseInOutExpo = 'easeInOutExpo',
+  EaseInCirc = 'easeInCirc',
+  EaseOutCirc = 'easeOutCirc',
+  EaseInOutCirc = 'easeInOutCirc',
+  EaseInElastic = 'easeInElastic',
+  EaseOutElastic = 'easeOutElastic',
+  EaseInOutElastic = 'easeInOutElastic',
+  EaseInBack = 'easeInBack',
+  EaseOutBack = 'easeOutBack',
+  EaseInOutBack = 'easeInOutBack',
+  EaseInBounce = 'easeInBounce',
+  EaseOutBounce = 'easeOutBounce',
+  EaseInOutBounce = 'easeInOutBounce',
+}
 ```
 
 ---
