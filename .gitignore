@@ -73,3 +73,13 @@ android/** */
 !.yarn/releases
 !.yarn/sdks
 !.yarn/versions
+
+# Built application files
+*.apk
+*.aar
+*.ap_
+*.aab
+
+# Gradle files
+.gradle/
+build/

@@ -1,6 +1,6 @@
 {
   "name": "@baykan/react-native-linechart-native",
-  "version": "1.1.7",
+  "version": "1.1.9",
   "author": {
     "name": "Baykan Developer"
   },
@@ -23,8 +23,8 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
-    "android",
-    "ios",
+    "android/app/src/main/java/com/linechart",
+    "ios/RTNLineChart",
     "dist",
     "LineChart.podspec",
     "src",

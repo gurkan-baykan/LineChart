@@ -6,6 +6,11 @@ babel.config.js
 metro.config.js
 android/.gradle
 ios/Pods
-android/
 assets/
-node_modules/
+android/app/build
+ios/Pods
+ios/build
+ios/Pods
+ios/build
+ios/*.xcworkspace
+ios/*/*.xcworkspace
