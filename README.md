@@ -14,6 +14,10 @@ Below is the command to install the package
 yarn add @baykan/react-native-linechart-native
 ```
 
+```bash
+Just for Ios pod install
+```
+
 **Example Screenshots**
 
 | iOS Example                                                                                             | Android Example                                                                                             |
@@ -27,7 +31,7 @@ yarn add @baykan/react-native-linechart-native
 <div style="background-color: #f6f8fa; padding: 16px; border-radius: 6px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
 
 ```javascript
-import {LineChartSpecView} from '@baykan/react-native-linechart-native';
+import {LineChart} from '@baykan/react-native-linechart-native';
 
 const count = 16;
 const range = 50;
@@ -95,7 +99,7 @@ return (
         justifyContent: 'center',
         alignItems: 'center',
       }}>
-      <LineChartSpecView
+      <LineChart
         data={lineData}
         markerEntity={{
           color: '#161617',
