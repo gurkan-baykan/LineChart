@@ -1,6 +1,6 @@
 {
   "name": "@baykan/react-native-linechart-native",
-  "version": "1.1.9",
+  "version": "1.2.4",
   "author": {
     "name": "Baykan Developer"
   },
@@ -8,6 +8,7 @@
   "homepage": "https://github.com/gurkan-baykan/LineChart.git",
   "description": "A performant Line Chart for React Native using Fabric",
   "license": "MIT",
+  "source": "src/index.tsx",
   "repository": {
     "type": "git",
     "url": "https://github.com/gurkan-baykan/LineChart.git"
@@ -20,15 +21,25 @@
     "start": "react-native start",
     "test": "jest"
   },
-  "main": "dist/index.js",
+  "main": "lib/commonjs/index.js",
+  "module": "lib/module/index.js",
   "types": "dist/index.d.ts",
   "files": [
-    "android/app/src/main/java/com/linechart",
-    "ios/RTNLineChart",
+    "lib", 
+    "src",
     "dist",
     "LineChart.podspec",
-    "src",
-    "jestSetup.js"
+    "android/src/main/java/com/linechart",
+    "android/src",
+    "android/build.gradle",
+    "android/gradle.properties",
+    "ios/RTNLineChart",
+    "ios/LineChart.xcodeproj",
+    "lib",
+    "index.js",
+    "index.d.ts",
+    "package.json",
+    "README.md"
   ],
   "codegenConfig": {
     "name": "LineChartSpec",
